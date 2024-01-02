@@ -22,3 +22,7 @@
 4. Методом изменения длины массива, по количеству полученных строк, формируем ответ.
 5. Выводим ответ в консоль. 
 >>>>>>> fa78037 (add description in  README.md)
+
+P.S. Найдено решение в использовании двух методов встроенных:
+string[] sortedByLength = arrayTask.Where(x => x.Length <= 3).ToArray();
+Console.WriteLine($"[{String.Join(", ", sortedByLength)}]");
